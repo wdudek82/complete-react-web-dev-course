@@ -1,0 +1,17 @@
+// Default font size in the browser is 16px
+// 16 * .625 = 10
+// In that way 1rem = 10px, 2.2rem == 22px, etc. 
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: $md-size;
+}
+
+h1 {
+  font-size: $lg-size;
+  font-weight: 700;
+}
