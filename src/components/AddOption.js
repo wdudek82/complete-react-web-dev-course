@@ -40,7 +40,7 @@ class AddOption extends React.Component {
       <div>
         <form onSubmit={this.handleAddOption}>
           <input type="text" name="option" placeholder="new option" />
-          <input type="submit" value="Add Option"/>
+          <button class="button">Add Option</button>
         </form>
         {errorTag}
       </div>

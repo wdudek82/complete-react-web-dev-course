@@ -16,9 +16,15 @@ const Options = (props) => {
 
   return (
     <div>
-      <button
-        onClick={props.handleDeleteOptions}
-      >Remove All</button>
+      <div className="widget-header">
+        <h3>Your options</h3>
+        <button
+          className='btn btn--link'
+          onClick={props.handleDeleteOptions}
+        >
+          Remove All
+        </button>
+      </div>
       <ol>
         {options.length ? options : <p>Please add option to get started!</p>}
       </ol>

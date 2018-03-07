@@ -6,16 +6,16 @@ const Option = (props) => {
 
   return (
     <div key={optionKey}>
+      {props.content}
       <button 
+        className="btn btn--link"
         onClick={(e) => {
             props.handleDeleteSingleOption(props.content)
           }
         }
       >
-        x
+        remove
       </button>
-
-      {props.content}
     </div>
   );
 }
