@@ -34,13 +34,13 @@ class AddOption extends React.Component {
       width: '200px',
       textAlign: 'center'
     }
-    const errorTag = this.state.error && <p style={errorStyle}>{this.state.error}</p>;
+    const errorTag = this.state.error && <p className="add-option-error">{this.state.error}</p>;
 
     return (
       <div>
-        <form onSubmit={this.handleAddOption}>
-          <input type="text" name="option" placeholder="new option" />
-          <button class="button">Add Option</button>
+        <form className="add-option" onSubmit={this.handleAddOption}>
+          <input className="add-option__input" type="text" name="option" placeholder="new option" />
+          <button className="btn">Add Option</button>
         </form>
         {errorTag}
       </div>

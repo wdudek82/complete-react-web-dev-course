@@ -5,8 +5,10 @@ const Option = (props) => {
   const content = props.content;
 
   return (
-    <div key={optionKey}>
-      {props.content}
+    <div key={optionKey} className="option">
+      <p className="option__text">
+        {props.index}. {props.content}
+      </p>
       <button 
         className="btn btn--link"
         onClick={(e) => {

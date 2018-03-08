@@ -8,7 +8,6 @@ html {
 
 body {
   background: $dark-blue;
-  color: #fff;
   font-family: Helvetica, Arial, sans-serif;
   font-size: $md-size;
 }
@@ -24,4 +23,11 @@ button {
   &:disabled {
     cursor: default;
   }
+}
+
+button:focus,
+input:focus,
+select:focus,
+textarea:focus {
+  outline: none;
 }

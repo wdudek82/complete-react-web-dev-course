@@ -1,9 +1,15 @@
 .header {
   background: $off-black;
   color: #fff;
-  margin-bottom: $xxl-size;
+  margin-bottom: $md-size;
   padding: $md-size $sm-size;
 
+}
+
+@media (min-width: $desktop-breakpoint) {
+  .header {
+    margin-bottom: $xxl-size;
+  }
 }
 
 .header__title {

@@ -9,6 +9,7 @@ const Options = (props) => {
         <Option
           key={`option-${ind}`}
           optionKey={`option-${ind}`}
+          index={ind+1}
           content={option}
           handleDeleteSingleOption={props.handleDeleteSingleOption}
         />);
@@ -17,7 +18,7 @@ const Options = (props) => {
   return (
     <div>
       <div className="widget-header">
-        <h3>Your options</h3>
+        <h3 className="widget-header__title">Your options</h3>
         <button
           className='btn btn--link'
           onClick={props.handleDeleteOptions}
@@ -25,8 +26,8 @@ const Options = (props) => {
           Remove All
         </button>
       </div>
-      <ol>
-        {options.length ? options : <p>Please add option to get started!</p>}
+      <ol className="widget__list">
+        {options.length ? options : <p className="widget__msg">Please add option to get started!</p>}
       </ol>
     </div>
   );
